@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "enset-challenge1",
+    "enset-challenge": "enset-challenge1"
+  },
+  "targets": {},
+  "etags": {}
+}

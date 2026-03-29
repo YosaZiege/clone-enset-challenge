@@ -1,0 +1,979 @@
+{
+  "header": {
+    "logo": "/assets/logo_dark.svg",
+    "alt": "ENSET CHALLENGE 2026",
+    "links": [
+      {
+        "label": "Home",
+        "href": "#",
+        "status": "true"
+      },
+      {
+        "label": "About",
+        "href": "#about",
+        "status": "true"
+      },
+      {
+        "label": "Competitions",
+        "href": "#competition",
+        "status": "true"
+      },
+      {
+        "label": "Timeline",
+        "href": "#timeline",
+        "status": "true"
+      },
+      {
+        "label": "Schedule",
+        "href": "#agenda",
+        "status": "true"
+      },
+      {
+        "label": "Sponsors",
+        "href": "#sponsors",
+        "status": "true"
+      },
+      {
+        "label": "FAQ",
+        "href": "#faq",
+        "status": "true"
+      }
+    ],
+    "btn": {
+      "label": "Hackathon Kick-Off",
+      "href": "https://www.youtube.com/live/998EeOs02IM",
+      "status": "false"
+    }
+  },
+  "hero": {
+    "description": "Join ENSET Challenge 2026 - Morocco's premier student competition for AI innovation and cybersecurity excellence, taking place during the Global Entrepreneurship and Innovation Week.",
+    "between": "On-Site Finals at ENSET: April 15-17 ",
+    "date": "2026-04-15T15:59:00Z",
+    "hackathon": {
+      "label": "Discover the Hackathon",
+      "href": "#hackathon-comp"
+    },
+    "ctf": {
+      "label": "Discover the CTF",
+      "href": "#ctf-comp"
+    },
+    "keyValue": [
+      {
+        "icon": "terminal",
+        "label": "The Event",
+        "value": "ENSET Challenge 2026"
+      },
+      {
+        "icon": "calendar",
+        "label": "Grand Finals",
+        "value": "April 15 - 17, 2026"
+      },
+      {
+        "icon": "map-pin",
+        "label": "Venue",
+        "value": "ENSET Mohammedia"
+      },
+      {
+        "icon": "money-dollar-circle",
+        "label": "Entry Fee",
+        "value": "Completely Free"
+      }
+    ],
+    "rightSection": {
+      "title": "On-Site Finals at ENSET: April 15 - 17",
+      "date": "2026-04-15T15:59:00Z",
+      "keyPoint": [
+        {
+          "label": "Elite Networking",
+          "value": "Connect with industry leaders, academic experts, and Morocco's top student innovators."
+        },
+        {
+          "label": "Agentic AI Impact Hackathon",
+          "value": "A 36-hour sprint to architect autonomous AI agents that drive progress across educational and industrial ecosystems."
+        },
+        {
+          "label": "Intense Cybersecurity CTF",
+          "value": "24-hour Capture The Flag competition testing offensive and defensive cybersecurity skills."
+        },
+        {
+          "label": "Expert Workshops & Mentorship",
+          "value": "Receive guidance from professionals and academics in targeted workshops and personalized mentorship sessions."
+        }
+      ]
+    }
+  },
+  "about": {
+    "title": "ENSET CHALLENGE 2026",
+    "description": "As a highlight of the Global Entrepreneurship and Innovation Week (GEIW), ENSET Challenge 2026 is meticulously organized by the student tech clubs of ENSET Mohammedia (N7Geeks, GDG On Campus, N7SEC). Our mission is to cultivate a dynamic ecosystem for technological innovation and cybersecurity excellence among Morocco's future leaders.",
+    "highlight": [
+      [
+        "Agentic AI Impact Hackathon",
+        "#00cc88",
+        "A 36-hour sprint to architect autonomous AI agents that drive progress across educational and industrial ecosystems."
+      ],
+      [
+        "Premier CTF Competition",
+        "#ff3366",
+        "Rigorous online qualifiers culminating in a high-stakes 24-hour final cybersecurity challenge."
+      ],
+      [
+        "Targeted Skill Development",
+        "#33ccff",
+        "Access exclusive workshops and benefit from direct mentorship by industry and academic experts."
+      ],
+      [
+        "Strategic Networking Platform",
+        "#ff9933",
+        "Connect with leading companies, influential professionals, and talented peers from across Morocco's tech ecosystem."
+      ]
+    ]
+  },
+  "competition": {
+    "title": "The ENSET Challenge 2026 Arenas",
+    "subdescription": "Showcase your mastery in Artificial Intelligence or Cybersecurity.",
+    "description": "Choose your battleground. Participate in our flagship competitions to innovate, learn, network, and contend for prestigious awards and career-defining internship opportunities.",
+    "hackathon": {
+      "title": "ENSET Challenge Hackathon: Agentic AI for Progress",
+      "description": "Engage in a 36-hour marathon to build autonomous AI agents that drive real-world progress in education and industry. Build smart, interactive ecosystems and deploy tools with real-world impact.",
+      "date": "Grand Final: April 15 - 17, 2026",
+      "duration": "36 Hours Non-Stop (Final Round)",
+      "teamSize": "Teams of 3 Students",
+      "focus": "Agentic AI, Economic/Social Impact, Technological Innovation",
+      "sections": [
+        {
+          "title": " Agentic & Interactive AI",
+          "description": "Engineer autonomous agents that reason, plan, and use tools to solve complex challenges in education or industry, creating smart ecosystems",
+          "icon": "brain-2",
+          "color": "#00cc88"
+        },
+        {
+          "title": "Seamless User Experience",
+          "description": "Design and develop intuitive web/mobile interfaces with a focus on usability and accessibility.",
+          "icon": "code",
+          "color": "#00cc88"
+        },
+        {
+          "title": "Scalable Cloud Architecture",
+          "description": "Implement cloud infrastructure to ensure your solution is robust and scalable.",
+          "icon": "server",
+          "color": "#00cc88"
+        },
+        {
+          "title": "Measurable Impact",
+          "description": "Articulate the potential real-world impact and value proposition of your project.",
+          "icon": "globe",
+          "color": "#00cc88"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "Pass the Online Qualification Gauntlet (April 1 - 5)",
+          "icon": "check-circle",
+          "color": "#00cc88"
+        },
+        {
+          "text": "Compete in a dedicated team of three innovators",
+          "icon": "check-circle",
+          "color": "#00cc88"
+        },
+        {
+          "text": "Deliver a compelling final pitch to our expert jury panel",
+          "icon": "check-circle",
+          "color": "#00cc88"
+        }
+      ],
+      "actions": [
+        {
+          "text": "Register Your Hackathon Team",
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLSdxqqHtdscUR75jcIQXvnDYfrviGQgBF0KAu3lqui1OIcM0pg/viewform?usp=sharing&ouid=110840976796065886053",
+          "color": "#00cc88",
+          "icon": "arrow-right"
+        }
+      ],
+      "prizes": [
+        {
+          "place": "1st Place Champions",
+          "reward": "Soon to be announced"
+        },
+        {
+          "place": "2nd Place Laureates",
+          "reward": "Soon to be announced"
+        },
+        {
+          "place": "3rd Place Finalists",
+          "reward": "Soon to be announced"
+        }
+      ],
+      "judging": [
+        "Innovation & Originality",
+        "Thematic Relevance & Impact Potential",
+        "Technical Execution & Feasibility",
+        "Solution Design & User Experience",
+        "Pitch Quality & Presentation Clarity"
+      ]
+    },
+    "ctf": {
+      "title": "ENSET Challenge CTF: Cyber Showdown",
+      "description": "Prepare for the ultimate cybersecurity trial! Following online qualifiers, top contenders will face off in a grueling 12-hour Capture The Flag final hosted live at ENSET Mohammedia.",
+      "date": "Grand Final: April 16 - 17, 2026",
+      "duration": "12 Hours Continuous Play (Final Round)",
+      "teamSize": "Individual Competitors & Teams Welcome (Recommended 2-3 members)",
+      "focus": "Web Application Security, Cryptography, Reverse Engineering, Network Forensics",
+      "sections": [
+        {
+          "title": "Web Exploitation",
+          "description": "Uncover and leverage critical vulnerabilities in web applications and services.",
+          "icon": "globe",
+          "color": "#ff3366"
+        },
+        {
+          "title": "Cryptographic Challenges",
+          "description": "Decipher encrypted messages, break codes, and master cryptographic techniques.",
+          "icon": "lock",
+          "color": "#ff3366"
+        },
+        {
+          "title": "Binary Analysis",
+          "description": "Reverse engineer software to understand functionality and find hidden flaws.",
+          "icon": "file-code",
+          "color": "#ff3366"
+        },
+        {
+          "title": "Network & Forensics Investigation",
+          "description": "Analyze network traffic, investigate intrusions, and recover digital evidence.",
+          "icon": "shield-check",
+          "color": "#ff3366"
+        }
+      ],
+      "checklist": [
+        {
+          "text": "Conquer the Online Qualification Stage (April 3, 15:00 - 21:00)",
+          "icon": "check-circle",
+          "color": "#ff3366"
+        },
+        {
+          "text": "Compete individually or form a cybersecurity team with 2-3 members",
+          "icon": "check-circle",
+          "color": "#ff3366"
+        },
+        {
+          "text": "Battle through 12 hours of intense challenges on the ENSET campus",
+          "icon": "check-circle",
+          "color": "#ff3366"
+        }
+      ],
+      "actions": [
+        {
+          "text": "Register for the CTF",
+          "url": "https://forms.gle/1goqUdTfvNZ9sWKr5",
+          "color": "#ff3366",
+          "icon": "arrow-right"
+        }
+      ],
+      "prizes": [
+        {
+          "place": "1st Place Champions",
+          "reward": "Soon to be announced"
+        },
+        {
+          "place": "2nd Place Laureates",
+          "reward": "Soon to be announced"
+        },
+        {
+          "place": "3rd Place Finalists",
+          "reward": "Soon to be announced"
+        }
+      ],
+      "scoring": "Points awarded based on challenge difficulty, speed of capture, and flag accuracy."
+    },
+    "eligibility": "Participation is open to all students enrolled in any Moroccan university or higher education institution. For the CTF, participants may compete individually or form teams (recommended 2-3 members)."
+  },
+  "timeline": {
+    "title": "ENSET Challenge 2026 - Key Milestones",
+    "description": "Navigate your path to victory! Follow these critical dates for the Hackathon and CTF.",
+    "hackathon": {
+      "title": "Hackathon Journey",
+      "phases": [
+        {
+          "title": "Phase 1: Secure Your Spot - Registration",
+          "duration": "March 24 - 31",
+          "number": "1",
+          "steps": [
+            {
+              "start": "2026-03-24T21:00:00",
+              "end": "2026-03-31T23:59:00",
+              "detail": "Online registration opens for aspiring Hackathon teams. Gather your members and apply before the deadline."
+            }
+          ]
+        },
+        {
+          "title": "Phase 2: Virtual Proving Ground - Online Qualification",
+          "duration": "April 1 - 9",
+          "number": "2",
+          "steps": [
+            {
+              "start": "2026-04-01T18:00:00",
+              "end": "2026-04-05T00:00:00",
+              "detail": "The online qualification round starts. Teams develop and submit their initial project concepts."
+            },
+            {
+              "start": "2026-04-06T00:00:00Z",
+              "end": "2026-04-08T15:00:00Z",
+              "detail": "Our expert jury evaluates all submitted projects from the qualification round."
+            },
+            {
+              "start": "2026-04-09T22:00:00Z",
+              "end": "2026-04-09T23:59:00Z",
+              "detail": "The top performing teams are selected and officially announced as finalists."
+            }
+          ]
+        },
+        {
+          "title": "Phase 3: The Main Event - On-Site Finals at ENSET",
+          "duration": "April 15 - 17",
+          "number": "3",
+          "steps": [
+            {
+              "start": "2026-04-15T14:00:00Z",
+              "end": "2026-04-15T22:00:00Z",
+              "detail": "Finalists arrive for check-in, attend the opening ceremony, join workshops, and begin the 36-hour Hackathon."
+            },
+            {
+              "start": "2026-04-16T09:00:00Z",
+              "end": "2026-04-16T22:00:00Z",
+              "detail": "Teams engage in intensive project development, attend technical workshops, and receive expert mentorship."
+            },
+            {
+              "start": "2026-04-17T08:00:00Z",
+              "end": "",
+              "detail": "Teams finalize their projects, present their pitches to the judges at 09:00, and join the awards ceremony and networking event."
+            }
+          ]
+        }
+      ]
+    },
+    "ctf": {
+      "title": "CTF Journey",
+      "phases": [
+        {
+          "title": "Phase 1: Secure Your Spot - Registration",
+          "duration": "March 24 - 31",
+          "number": "1",
+          "steps": [
+            {
+              "start": "2026-03-24T20:00:00Z",
+              "end": "2026-03-31T22:59:00Z",
+              "detail": "Online registration opens for aspiring Ctf teams. Gather your members and apply before the deadline."
+            }
+          ]
+        },
+        {
+          "title": "Phase 2: Online Qualification",
+          "duration": "April 3, 15:00 - 21:00",
+          "number": "2",
+          "steps": [
+            {
+              "start": "2026-04-03T14:00:00Z",
+              "end": "2026-04-03T20:00:00Z",
+              "detail": "CTF online qualification begins. Teams compete online to solve challenges during the 6-hour window."
+            }
+          ]
+        },
+        {
+          "title": "Phase 3: The Cyber Showdown - On-Site Final at ENSET",
+          "duration": "April 16, 21:00 - April 17, 09:00",
+          "number": "3",
+          "steps": [
+            {
+              "start": "2026-04-16T08:00:00Z",
+              "end": "2026-04-16T19:00:00Z",
+              "detail": "CTF finalists arrive at ENSET, complete check-in, and attend the main event activities."
+            },
+            {
+              "start": "2026-04-16T20:00:00Z",
+              "end": "2026-04-17T08:00:00Z",
+              "detail": "The intense 12-hour on-site CTF final competition begins, testing a wide range of cybersecurity skills."
+            },
+            {
+              "start": "2026-04-17T08:00:00Z",
+              "end": "2026-04-17T19:00:00Z",
+              "detail": "The CTF competition concludes. Final scores are determined, leading into the awards ceremony."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "agenda": {
+    "title": "Finals Weekend Schedule",
+    "description": "Key moments during the ENSET Challenge 2026 Grand Finals at ENSET Mohammedia (April 15-17).",
+    "hackathon": {
+      "tabLabel": "Hackathon",
+      "events": [
+        {
+          "date": "April 15, 2026",
+          "title": "Hackathon Day 1: Launch",
+          "themeColor": "#00cc88",
+          "items": [
+            {
+              "time": "15:00 - 18:00",
+              "detail": "Check-in, Opening Ceremony & Hackathon Kick-off"
+            },
+            {
+              "time": "18:00 - 22:00+",
+              "detail": "Initial Development, Mentoring & Evening Workshop"
+            }
+          ]
+        },
+        {
+          "date": "April 16, 2026",
+          "title": "Hackathon Day 2: Intensity",
+          "themeColor": "#33ccff",
+          "items": [
+            {
+              "time": "All Day",
+              "detail": "Intensive Development, Mentor Support & Tech Workshops"
+            }
+          ]
+        },
+        {
+          "date": "April 17, 2026",
+          "title": "Hackathon Day 3: Finale",
+          "themeColor": "#ff9933",
+          "items": [
+            {
+              "time": "09:00",
+              "detail": "Final Pitches & Jury Deliberation ,\n Awards Ceremony & Closing Reception"
+            }
+          ]
+        }
+      ]
+    },
+    "ctf": {
+      "tabLabel": "CTF",
+      "events": [
+        {
+          "date": "April 16, 2026",
+          "title": "CTF Final Begins",
+          "themeColor": "#ff3366",
+          "items": [
+            {
+              "time": "09:00 - 20:00",
+              "detail": "Finalist Check-in & Joint Opening Ceremony with Hackathon"
+            },
+            {
+              "time": "21:00",
+              "detail": "Official Start of the 12-Hour CTF Competition"
+            }
+          ]
+        },
+        {
+          "date": "April 17, 2026",
+          "title": "CTF Conclusion & Awards",
+          "themeColor": "#33ccff",
+          "items": [
+            {
+              "time": "09:00",
+              "detail": "CTF Concludes, Final Scores Tabulated"
+            },
+            {
+              "time": "13:00 - 20:00",
+              "detail": "Joint Awards Ceremony & Closing Reception with Hackathon"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "sponsors": {
+    "title": "Sponsors & Partners who have trusted us",
+    "subdescription": "Investing in Morocco's future tech leaders and innovators.",
+    "description": "The success of ENSET Challenge 2026 relies on the invaluable support of our sponsors and partners. Explore the strategic advantages of collaboration.",
+    "partners": {
+      "gold": [
+        {
+          "name": "Gold Sponsor Example",
+          "logo": "/assets/logo.svg",
+          "tier": "Gold",
+          "color": "yellow"
+        }
+      ],
+      "silver": [
+        {
+          "name": "Silver Sponsor Example",
+          "logo": "/assets/logo.svg",
+          "tier": "Silver",
+          "color": "gray"
+        }
+      ],
+      "bronze": [
+        {
+          "name": "Zynerator",
+          "logo": "/assets/sponsor/zynerator.jpeg",
+          "tier": "Bronze",
+          "color": "orange",
+          "link": "https://zynerator.com/"
+        },
+        {
+          "name": "Sidi Ali",
+          "logo": "/assets/sponsor/sidiali.png",
+          "tier": "Bronze",
+          "color": "orange",
+          "link": "https://www.instagram.com/sidialiwater/"
+        },
+        {
+          "name": "ISIC",
+          "logo": "/assets/sponsor/isic.png",
+          "tier": "Bronze",
+          "color": "orange",
+          "link": "https://www.myisic.ma/"
+        },
+        {
+          "name": "adria Business & Technology",
+          "logo": "/assets/sponsor/adria.png",
+          "tier": "Bronze",
+          "color": "orange",
+          "link": "https://adria-bt.com/"
+        },
+        {
+          "name": "Red Bull",
+          "logo": "/assets/sponsor/redbull.png",
+          "tier": "Bronze",
+          "color": "orange",
+          "link": "https://www.redbull.com/fr-fr"
+        }
+      ]
+    },
+    "whySponsor": {
+      "title": "Why Partner with ENSET CHALLENGE 2026?",
+      "description": "Connect with exceptional student talent, enhance your brand visibility, and demonstrate commitment to innovation within Morocco's tech landscape.",
+      "reasons": [
+        {
+          "title": "Premier Talent Acquisition",
+          "detail": "Gain exclusive access to recruit high-potential students specializing in AI, Cybersecurity, and Software Engineering from leading Moroccan institutions.",
+          "icon": "group",
+          "color": "#2196F3"
+        },
+        {
+          "title": "Enhanced Brand Positioning",
+          "detail": "Elevate your company's profile within a vibrant community of students, academics, and tech professionals.",
+          "icon": "eye",
+          "color": "#4CAF50"
+        },
+        {
+          "title": "Impactful CSR & Community Engagement",
+          "detail": "Showcase your dedication to fostering education, innovation, and youth empowerment in Morocco.",
+          "icon": "hand-heart",
+          "color": "#FF9800"
+        }
+      ]
+    }
+  },
+  "team": {
+    "title": "Key Organizing Committee Members",
+    "description": "Introducing the dedicated student leaders from N7Geeks, GDG On Campus ENSET-M, and N7SEC who are orchestrating ENSET Challenge 2026. Contact us with any inquiries.",
+    "lead": [
+      {
+        "name": "Aicha ZEROUAL",
+        "role": "Lead of GDG On Campus ENSET Mohammedia",
+        "photo": "/assets/photo/AichaZEROUAL.jpg",
+        "media": [
+          {
+            "icon": "linkedin",
+            "link": "https://www.linkedin.com/in/aicha-zeroual"
+          }
+        ]
+      },
+      {
+        "name": "Mohamed Elanâami",
+        "role": "Lead of N7GEEKS",
+        "photo": "/assets/photo/mohammedan.jpeg",
+        "media": [
+          {
+            "icon": "linkedin",
+            "link": "https://www.linkedin.com/in/elanaami/"
+          }
+        ]
+      },
+      {
+        "name": "Yahya ELOUARRAK",
+        "role": "Lead of N7SEC",
+        "photo": "/assets/photo/YahyaElouarrak.jpg",
+        "media": [
+          {
+            "icon": "linkedin",
+            "link": "https://www.linkedin.com/in/yahya-elouarrak"
+          }
+        ]
+      }
+    ],
+    "member": []
+  },
+  "advisor": {
+    "title": "Meet Our Distinguished Supervisors",
+    "description": "We are honored to have the guidance and expertise of our esteemed academic supervisors who are integral to the success of ENSET Challenge 2026.",
+    "member": [
+      {
+        "name": "Pr. Mohamed Youssﬁ",
+        "role": "Research Professor, ENSET, UH2C, Software Engineering Consultant.",
+        "institution": "ENSET Mohammedia",
+        "photo": "/assets/advisor/pr_youssefi.jpeg"
+      },
+      {
+        "name": "Pr. Soufiane Hamida",
+        "role": "Professor Researcher at ENSET Mohammedia, UH2 of Casablanca",
+        "institution": "ENSET Mohammedia",
+        "photo": "/assets/advisor/pr_hamida.jpeg"
+      },
+      {
+        "name": "Pr. Abdellah OUAGUID",
+        "role": "Ph.D, Study and Development Officer in Software Engineering at CNRST.",
+        "institution": "ENSET Mohammedia",
+        "photo": "/assets/advisor/pr_ouaguid.jpeg"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "questions": [
+      {
+        "q": "Who is eligible to participate in ENSET Challenge 2026?",
+        "a": "The competition is open to all students currently enrolled in any recognized university, engineering school, or higher education institution within Morocco."
+      },
+      {
+        "q": "What are the team size requirements?",
+        "a": "Hackathon participation requires teams of  three (3) students or two (2). For the CTF competition, participants may compete individually or form teams, with a recommended size of 2-4 members."
+      },
+      {
+        "q": "Is there a fee to register or participate?",
+        "a": "No, participation in the ENSET Challenge 2026, including both the Hackathon and CTF finals, is entirely free of charge for all selected students."
+      },
+      {
+        "q": "What technical skills are recommended?",
+        "a": "For this Hackathon, proficiency in Agentic frameworks, LLM tool-use, full-stack development, and UI/UX design is advantageous for building autonomous ecosystems."
+      },
+      {
+        "q": "What complimentary services are provided for finalists attending the ENSET Challenge 2026 event?",
+        "a": "Yes, finalists will receive full support during the event. Complimentary basic on-campus accommodation at ENSET Mohammedia will be arranged for those traveling from outside the greater Mohammedia/Casablanca metropolitan area. Additionally, all registered finalists will receive complimentary meals (breakfast, lunch, dinner) throughout the three-day final competition (April 15-17) hosted on the ENSET campus."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "email": "contact.ensetchallenge@ensem.ac.ma",
+    "phone": "+212 766-032618 (Mohammed-Amine BENHIMA)",
+    "location": "École Normale Supérieure de l'Enseignement Technique (ENSET), Mohammedia, Morocco",
+    "form": {
+      "fields": [
+        "name",
+        "email",
+        "subject",
+        "message"
+      ],
+      "submitText": "Send Inquiry"
+    }
+  },
+  "footer": {
+    "branding": {
+      "logo": "/assets/logo_dark.svg",
+      "alt": "ENSET CHALLENGE 2026",
+      "description": "Morocco's premier student technology competition focused on AI and Cybersecurity. An initiative by the student clubs N7Geeks, GDG On Campus ENSET-M, and N7SEC.",
+      "socials": [
+        {
+          "icon": "instagram",
+          "href": "https://www.instagram.com/enset_challenge/"
+        },
+        {
+          "icon": "linkedin",
+          "href": "https://www.linkedin.com/company/enset-challange/"
+        }
+      ]
+    },
+    "quickLinks": {
+      "title": "Quick Navigation",
+      "links": [
+        {
+          "label": "About Us",
+          "href": "#about"
+        },
+        {
+          "label": "Competitions",
+          "href": "#competition"
+        },
+        {
+          "label": "Event Timeline",
+          "href": "#timeline"
+        },
+        {
+          "label": "Finals Schedule",
+          "href": "#agenda"
+        },
+        {
+          "label": "Our Partners",
+          "href": "#sponsors"
+        },
+        {
+          "label": "Help Center (FAQ)",
+          "href": "#faq"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact Information",
+      "items": [
+        {
+          "icon": "mail",
+          "label": "enset.challenge@gmail.com"
+        },
+        {
+          "icon": "phone",
+          "label": "+212613043773"
+        },
+        {
+          "icon": "map-pin",
+          "label": "ENSET Mohammedia Campus, Morocco"
+        }
+      ]
+    },
+    "subscribe": {
+      "title": "Stay Informed",
+      "description": "Subscribe to our official newsletter for exclusive updates, announcements, and insights regarding ENSET CHALLENGE 2026.",
+      "form": {
+        "placeholder": "Enter your professional email",
+        "buttonLabel": "Subscribe",
+        "action": "#subscribe"
+      }
+    },
+    "legal": {
+      "copyright": "© 2026 ENSET CHALLENGE | Made with ❤️ by Hamza El Ghazouani",
+      "links": [
+        {
+          "label": "Privacy Policy",
+          "href": "#privacy"
+        },
+        {
+          "label": "Code of Conduct",
+          "href": "#coc"
+        }
+      ]
+    }
+  },
+  "organizers": {
+    "title": "All Organizers",
+    "description": "Meet the dedicated student leaders from N7Geeks, GDG On Campus ENSET-M, and N7SEC driving ENSET Challenge 2026.",
+    "clubs": [
+      {
+        "name": "N7SEC",
+        "logo": "/assets/logo/n7sec.png",
+        "members": [
+          {
+            "name": "Mohamed Ait El Kadi",
+            "role": "Member",
+            "photo": "/assets/photo/mohamed-aitelkadi.jpg",
+            "media": [
+              {
+                "icon": "linkedin",
+                "link": "https://www.linkedin.com/in/mohamed-ait-el-kadi-a4560124b/?skipRedirect=true"
+              }
+            ]
+          },
+          {
+            "name": "Saad Ait Saidou-Ali",
+            "role": "Member",
+            "photo": "/assets/photo/saad-aitsaidouali.png",
+            "media": [
+              {
+                "icon": "linkedin",
+                "link": "https://www.linkedin.com/in/saadaitsaidouali"
+              }
+            ]
+          },
+          {
+            "name": "Mahdi Ibtissam",
+            "role": "Member",
+            "photo": "/assets/photo/mahdi-ibtissam.jpeg",
+            "media": []
+          },
+          {
+            "name": "Zakariyae Belagraa",
+            "role": "Member",
+            "photo": "/assets/photo/zakariyae-belagraa.jpg",
+            "media": [
+              {
+                "icon": "linkedin",
+                "link": "https://www.linkedin.com/in/belagraa-zakariyae/"
+              }
+            ]
+          },
+          {
+            "name": "Tarik Khoumri",
+            "role": "Member",
+            "photo": "/assets/photo/tarik-khoumri.jpg",
+            "media": [
+              {
+                "icon": "linkedin",
+                "link": "https://www.linkedin.com/in/tarik-khoumri-0756b8254/"
+              }
+            ]
+          },
+          {
+            "name": "Machnaoui Abdellatif",
+            "role": "Member",
+            "photo": "/assets/photo/abdellatif-machnaoui.png",
+            "media": [
+              {
+                "icon": "linkedin",
+                "link": "https://www.linkedin.com/in/abdellatif-m/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "GDG On Campus ENSET-M",
+        "logo": "/assets/logo/gdg.svg",
+        "members": [
+          {
+            "name": "Wajid Wissal",
+            "role": "Member",
+            "photo": "/assets/photo/wissal-wajid.jpeg",
+            "media": []
+          },
+          {
+            "name": "Yasser Namez",
+            "role": "Member",
+            "photo": "/assets/photo/yasser-namez.jpg",
+            "media": [
+              {
+                "icon": "linkedin",
+                "link": "https://www.linkedin.com/in/yasser-namez-0898a322b"
+              }
+            ]
+          },
+          {
+            "name": "Omaima Assif",
+            "role": "Member",
+            "photo": "/assets/photo/omaima-assif.webp",
+            "media": [
+              {
+                "icon": "linkedin",
+                "link": "https://www.linkedin.com/in/omaima-assif-093549295"
+              }
+            ]
+          },
+          {
+            "name": "Bouderhem Anass",
+            "role": "Member",
+            "photo": "/assets/photo/anass-bouderhem.jpg",
+            "media": [
+              {
+                "icon": "linkedin",
+                "link": "https://www.linkedin.com/in/anass-bouderhem/"
+              }
+            ]
+          },
+          {
+            "name": "Essadqui Soumia",
+            "role": "Member",
+            "photo": "/assets/photo/soumia-essadqui.jpeg",
+            "media": [
+              {
+                "icon": "linkedin",
+                "link": "https://www.linkedin.com/in/soumia-essadqui-94471b328"
+              }
+            ]
+          },
+          {
+            "name": "Ez-Zahery Ahmed Amine",
+            "role": "Member",
+            "photo": "/assets/photo/ahmed-amine-ezzahery.jpeg",
+            "media": [
+              {
+                "icon": "linkedin",
+                "link": "https://www.linkedin.com/in/ahmed-amine-ez-zahery"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "N7GEEKS",
+        "logo": "/assets/logo/n7geeks.svg",
+        "members": [
+          {
+            "name": "Bayi Mostapha",
+            "role": "Member",
+            "photo": "/assets/photo/mostapha-bayi.jpg",
+            "media": [
+              {
+                "icon": "linkedin",
+                "link": "https://www.linkedin.com/in/mostapha-bayi/"
+              }
+            ]
+          },
+          {
+            "name": "Fatima Zahra Es-sadiki",
+            "role": "Member",
+            "photo": "/assets/photo/fatimazahra-essadiki.jpeg",
+            "media": [
+              {
+                "icon": "linkedin",
+                "link": "https://www.linkedin.com/in/es-sadiki/"
+              }
+            ]
+          },
+          {
+            "name": "Fatima El Abbadi",
+            "role": "Member",
+            "photo": "/assets/photo/fatima-elabbadi.jpeg",
+            "media": [
+              {
+                "icon": "linkedin",
+                "link": "https://www.linkedin.com/in/fatima-al-abbadi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+              }
+            ]
+          },
+          {
+            "name": "Aya Kouhail",
+            "role": "Member",
+            "photo": "/assets/photo/aya-kouhail.jpeg",
+            "media": [
+              {
+                "icon": "linkedin",
+                "link": "http://linkedin.com/in/aya-kouhail-9b8333249"
+              }
+            ]
+          },
+          {
+            "name": "Touahri Ghizlane",
+            "role": "Member",
+            "photo": "/assets/photo/ghizlane-touahri.jpg",
+            "media": [
+              {
+                "icon": "linkedin",
+                "link": "https://www.linkedin.com/in/ghizlane-touahri-44a5882a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              }
+            ]
+          },
+          {
+            "name": "Id Ouaksim Halima",
+            "role": "Member",
+            "photo": "/assets/photo/idouaksim-halima.jpg",
+            "media": [
+              {
+                "icon": "linkedin",
+                "link": "https://www.linkedin.com/in/halima-idouaksim"
+              }
+            ]
+          },
+          {
+            "name": "Ayman Janati",
+            "role": "Member",
+            "photo": "/assets/photo/ayman-janati.jpg",
+            "media": []
+          }
+        ]
+      }
+    ]
+  }
+}

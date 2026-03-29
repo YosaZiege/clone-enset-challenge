@@ -1,0 +1,100 @@
+<section id="sponsors" class="relative max-w-7xl mx-auto z-100">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-4">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">
+        {{ data().title }}
+      </h2>
+    </div>
+    @if (true) {
+      <p class="text-gray-400 text-center max-w-2xl mx-auto">
+        {{ data().description }}
+      </p>
+      <div class="mb-16">
+        <div class="grid grid-cols-2 my-8 md:grid-cols-3 lg:grid-cols-6 gap-6">
+          @for (item of data().partners.bronze; track $index) {
+            <div class="sponsor-card">
+              <a
+                [href]="item.link"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block"
+              >
+                <div
+                  class="backdrop-blur-sm border border-white/10 rounded-xl p-4 h-48 flex flex-col items-center justify-center transform hover:translate-y-[-5px] transition-transform duration-300 group"
+                >
+                  <img
+                    [src]="item.logo"
+                    [alt]="item.name"
+                    height="120"
+                    class="rounded-lg opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                  />
+                </div>
+              </a>
+            </div>
+          }
+        </div>
+      </div>
+      <div class="text-center text-2xl font-bold mb-24 text-gray-400">
+        Other Sponsors to be announced soon! Stay tuned for exciting updates ...
+      </div>
+    } @else {
+      <div class="text-center mb-24 text-gray-400">
+        Sponsors to be announced soon! Stay tuned for exciting updates ...
+      </div>
+    }
+    <div class="mb-16">
+      <h3 class="text-2xl font-bold mb-4 text-center">
+        {{ data().whySponsor.title }}
+      </h3>
+      <p class="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
+        {{ data().whySponsor.description }}
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        @for (item of data().whySponsor.reasons; track $index) {
+          <div
+            class="bg-[#131a29]/80 backdrop-blur-sm border border-white/10 rounded-xl p-6"
+          >
+            <div
+              class="w-12 h-12 rounded-full bg-[#33ccff]/10 flex items-center justify-center mb-4"
+            >
+              <i
+                data-lucide="trending-up"
+                [class]="`text-2xl ri-${item.icon}-line text-[${item.color}]`"
+              ></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">{{ item.title }}</h3>
+            <p class="text-gray-400">
+              {{ item.detail }}
+            </p>
+          </div>
+        }
+      </div>
+      <div class="text-center mt-8">
+        <div class="inline-block relative group">
+          <div
+            class="absolute -inset-1 bg-gradient-to-r rounded-full blur-md opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"
+          ></div>
+          <a
+            href="/sponsor"
+            class="relative flex items-center bg-[#0A1525] hover:bg-[#0A1525] text-[#00e5a0] font-bold py-4 px-10 rounded-full transition-all duration-300 border border-[#00e5a0]/50 group-hover:border-[#00e5a0]"
+          >
+            <span class="mr-2">How to become our Sponsor</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5 transition-transform group-hover:translate-x-1"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

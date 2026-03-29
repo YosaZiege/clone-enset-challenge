@@ -1,0 +1,114 @@
+<section class="py-24 z-100 text-white relative overflow-hidden bg-gradient-to-br from-[#0a0d14] to-[#131a29]">
+    <div class="container mx-auto px-4 max-w-6xl relative z-10">
+        <div class="mb-20 relative">
+            <div class="text-center pt-16 relative">
+                <h1 class="inline-block text-5xl md:text-6xl font-bold tracking-tight relative">
+                    <span class="relative ml-4">
+                        <span class="text-3xl md:text-4xl font-bold mb-6">{{data.title}}</span>
+                        <span
+                            class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#00e5a0]/50 to-[#00c288]/30"></span>
+                    </span>
+                </h1>
+                <p class="text-gray-400 mt-6 max-w-2xl mx-auto text-lg font-light tracking-wide">
+                    {{data.description}}
+                </p>
+            </div>
+        </div>
+
+        <div class="mb-20">
+            @for (club of data.clubs; track $index) {
+            <div class="mb-24">
+                <!-- Club Header -->
+                <div class="flex flex-col items-center justify-center mb-12">
+                    <div
+                        class="w-32 h-32 md:w-40 md:h-40 relative rounded-2xl bg-white/5 backdrop-blur-md p-6 mb-6 border border-[#131a29] hover:border-[#00e5a0]/30 transition-colors flex items-center justify-center group shadow-lg">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-br from-[#00e5a0]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl">
+                        </div>
+                        <img [src]="club.logo" [alt]="club.name"
+                            class="max-w-full max-h-full object-contain filter group-hover:drop-shadow-[0_0_15px_rgba(0,229,160,0.5)] transition-all duration-300 z-10" />
+                    </div>
+                    <h2
+                        class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
+                        {{club.name}}</h2>
+                    <div class="w-24 h-1 bg-gradient-to-r from-[#00e5a0]/50 to-transparent mt-4 rounded-full"></div>
+                </div>
+
+                <!-- Members Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    @for (member of club.members; track $index) {
+                    <div class="group h-full">
+                        <div
+                            class="relative h-full overflow-hidden rounded-2xl border border-[#131a29] transition-all duration-500 hover:border-[#00e5a0]/30 bg-gradient-to-br from-[#131a29] to-[#131a29]/80 shadow-md hover:shadow-[0_8px_30px_rgba(0,229,160,0.1)] hover:-translate-y-2">
+                            <div
+                                class="absolute top-0 right-0 w-40 h-40 bg-[#00e5a0]/5 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+                            </div>
+                            <div class="relative z-10 flex flex-col h-full">
+                                <div class="relative h-80 overflow-hidden">
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#131a29] z-10">
+                                    </div>
+                                    <img [src]="member.photo" [alt]="member.name"
+                                        class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
+                                    <div
+                                        class="absolute inset-0 bg-gradient-to-br from-[#00e5a0]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 mix-blend-overlay">
+                                    </div>
+                                </div>
+
+                                <div class="p-8 h-52 flex-grow flex flex-col justify-between">
+                                    <div>
+                                        <div class="flex items-center mb-4">
+                                            <div
+                                                class="h-px flex-grow bg-gradient-to-r from-[#00e5a0]/30 to-transparent">
+                                            </div>
+                                            <span
+                                                class="px-3 py-1 text-xs font-medium text-[#00e5a0] bg-[#00e5a0]/10 rounded-full mx-3">Organizer</span>
+                                            <div
+                                                class="h-px flex-grow bg-gradient-to-l from-[#00e5a0]/30 to-transparent">
+                                            </div>
+                                        </div>
+
+                                        <h3 class="text-2xl font-bold mb-2">{{member.name}}</h3>
+                                    </div>
+
+                                    <div>
+                                        <div class="flex h-full space-x-3">
+                                            @for (media of member.media; track $index) {
+                                            <a [href]="media.link" target="_blank"
+                                                class="w-8 h-8 rounded-full bg-[#131a29] flex items-center justify-center text-[#00e5a0] hover:bg-[#00e5a0]/20 transition-colors duration-300">
+                                                <i [class]="`ri-${media.icon}-fill`"></i>
+                                            </a>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    }
+                </div>
+            </div>
+            }
+        </div>
+
+        <!-- Back to Home -->
+        <div class="text-center mt-20">
+            <div class="inline-block relative group perspective-800">
+                <div
+                    class="absolute -inset-1 bg-gradient-to-r rounded-full blur-md opacity-75 transition duration-1000 group-hover:duration-200 animate-pulse-slow bg-[#00e5a0]/20">
+                </div>
+                <a routerLink="/"
+                    class="relative flex items-center bg-[#131a29] hover:bg-[#131a29] text-white hover:text-[#00e5a0] font-bold py-4 px-10 rounded-full transition-all duration-300 border border-white/10 hover:border-[#00e5a0]/50 transform group-hover:translate-y-[-2px] shadow-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5 mr-3 transition-transform duration-300 group-hover:-translate-x-1"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                    <span>Back to Home</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

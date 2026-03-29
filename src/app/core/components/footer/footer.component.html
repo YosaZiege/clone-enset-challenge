@@ -1,0 +1,57 @@
+<footer class="relative z-100 border-top border-white/10 lg:mb-2 mb-4 lg:py-10 px-4">
+  <div class="lg:px-36">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+      <div>
+        <a href="/" class="flex items-center lg:justify-start justify-center group mb-4">
+          <img [src]="data().branding.logo" [alt]="data().branding.alt" class="h-28 w-auto">
+        </a>
+        <p class="text-gray-400 text-sm mb-4">
+          {{data().branding.description}}
+        </p>
+        <div class="flex space-x-4">
+          @for (item of data().branding.socials; track $index) {
+            <a [href]="item.href" target="_blank" class="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors">
+              <i [class]="`text-gray-400 ri-${item.icon}-fill`"></i>
+            </a>
+          }
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-bold mb-4">{{data().quickLinks.title}}</h3>
+        <ul class="space-y-2">
+          @for (item of data().quickLinks.links; track $index) {
+            <li>
+              <a [href]="item.href" class="text-gray-400 hover:text-white transition-colors">
+                {{item.label}}
+              </a>
+            </li>
+          }
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-md font-bold mb-4">{{data().contact.title}}</h3>
+        <ul class="space-y-2">
+          @for (item of data().contact.items; track $index) {
+            <li class="flex items-center text-sm">
+              <i data-lucide="mail" [class]="`w-4 text-[#ff3366] mr-2 ri-${item.icon}-fill`"></i>
+              <span class="text-gray-400">{{item.label}}</span>
+            </li>
+          }
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-lg font-bold mb-4">{{data().subscribe.title}}</h3>
+        <p class="text-gray-400 text-sm mb-4">
+          {{data().subscribe.description}}
+        </p>
+      </div>
+    </div>
+
+    <div class="border-t border-white/10 pt-8 flex flex-col justify-center md:flex-row items-center">
+      <p class="text-gray-400 text-sm mb-4 md:mb-0">{{data().legal.copyright}}</p>
+    </div>
+  </div>
+</footer>

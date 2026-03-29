@@ -1,0 +1,11 @@
+<div class="faq-item bg-[#131a29]/80 backdrop-blur-sm border border-white/10 rounded-xl overflow-hidden mb-4">
+  <button class="faq-question w-full flex justify-between items-center p-6 text-left focus:outline-none cursor-pointer" (click)="toggle()">
+    <span class="text-lg font-medium">{{index()}} . {{data().q}}</span>
+    <i data-lucide="chevron-down" [class]="`w-5 h-5 text-gray-400 transition-transform duration-300 ${getIcon()}`"></i>
+  </button>
+  <div [class]="`faq-answer px-6 pb-6 ${visible ? 'block' : 'hidden'}`">
+    <p class="text-gray-300">
+      {{data().a}}
+    </p>
+  </div>
+</div>

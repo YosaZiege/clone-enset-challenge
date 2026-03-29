@@ -1,0 +1,382 @@
+<section class="relative mx-auto z-100 lg:w-10/12 py-6">
+  <div class="px-4">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">
+        About <span class="text-[#00e5a0]">{{ data().title }}</span>
+      </h2>
+      <div class="w-32 h-0.5 bg-[#00e5a0] mx-auto mb-6"></div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12 items-center mb-20 p-8">
+      <div class="flex justify-center">
+        <div class="relative">
+          <div
+            class="absolute inset-0 rounded-full bg-gradient-to-br from-[#00e5a0]/20 to-transparent blur-xl"
+          ></div>
+
+          <div class="relative rounded-full shadow-lg inline-block">
+            <img
+              src="/assets/logo_dark.svg"
+              alt="ENSET Challenge 2026 Logo"
+              class="w-240 h-84 rounded-full"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-2xl font-bold mb-4 text-[#00e5a0]">
+          ENSET Challenge 2026
+        </h3>
+        <p class="text-md text-justify leading-relaxed mb-6">
+          {{ data().description }}
+        </p>
+        @for (item of data().highlight; track $index) {
+          <p class="text-md leading-relaxed mb-1 text-justify">
+            <span [class]="`text-[${item[1]}] font-semibold`">
+              {{ item[0] }}
+            </span>
+            <span>{{ item[2] }}</span>
+          </p>
+        }
+
+        <div class="flex flex-wrap gap-6 mt-8">
+          <div class="flex items-center">
+            <div
+              class="w-12 h-12 rounded-full bg-[#00e5a0]/10 flex items-center justify-center text-[#00e5a0] mr-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <div>
+              <div class="text-2xl font-bold text-[#00e5a0]">36h</div>
+              <div class="text-sm text-gray-400">Of Innovation</div>
+            </div>
+          </div>
+
+          <div class="flex items-center">
+            <div
+              class="w-12 h-12 rounded-full bg-[#00e5a0]/10 flex items-center justify-center text-[#00e5a0] mr-3"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M20.2 7.8l-7.7 7.7-4-4-5.7 5.7"></path>
+                <path d="M15 7h6v6"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="text-2xl font-bold text-[#00e5a0]">2</div>
+              <div class="text-sm text-gray-400">Competitions</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-20">
+      <div class="text-center mb-10">
+        <h3 class="text-2xl font-bold inline-block relative">
+          Powered by Student Collaboration
+          <div
+            class="absolute -bottom-2 left-1/4 right-1/4 h-0.5 bg-[#00e5a0]"
+          ></div>
+        </h3>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 justify-center items-center">
+        <div
+          class="2xl:w-md w-xs flex-col bg-[#131a29]/20 backdrop-blur-sm border border-[#33ccff]/20 duration-300 group hover:border-[#33ccff]/40 lg:min-w-4/12 lg:mr-2 mb-2 md:min-w-12/12 min-h-64 overflow-hidden p-6 relative rounded-xl timeline-card transition-colors"
+        >
+          <div
+            class="absolute top-0 left-0 w-20 h-20 bg-[#33ccff]/10 rounded-full blur-xl"
+          ></div>
+          <div
+            class="lg:min-w-1/3 min-h-64 2xl:px-24 rounded-full flex items-center justify-center mx-auto mb-4 transition-colors duration-300"
+          >
+            <img
+              src="/assets/logo/n7geeks.png"
+              alt="N7Geeks Logo"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <h4 class="text-xl font-bold mb-2">N7Geeks</h4>
+          <p class="text-gray-400 mb-4">
+            ENSET Mohammedia's premier software development club, focusing on
+            coding excellence and innovative solutions.
+          </p>
+          <div class="flex space-x-3">
+            <span
+              class="px-3 py-1 bg-[#00e5a0]/10 text-[#00e5a0] text-xs rounded-full"
+              >Software Dev</span
+            >
+            <span
+              class="px-3 py-1 bg-[#00e5a0]/10 text-[#00e5a0] text-xs rounded-full"
+              >Innovation</span
+            >
+          </div>
+        </div>
+
+        <div
+          class="2xl:w-md w-xs flex-col bg-[#131a29]/20 backdrop-blur-sm border border-[#33ccff]/20 duration-300 group hover:border-[#33ccff]/40 lg:min-w-4/12 lg:mr-2 mb-2 md:min-w-12/12 min-h-64 overflow-hidden p-6 relative rounded-xl timeline-card transition-colors"
+        >
+          <div
+            class="absolute top-0 left-0 w-20 h-20 bg-[#33ccff]/10 rounded-full blur-xl"
+          ></div>
+          <div
+            class="2xl:px-24 h-64 rounded-full flex items-center justify-center mx-auto mb-4 transition-colors duration-300"
+          >
+            <img
+              src="/assets/logo/gdg.svg"
+              alt="GDG On Campus Logo"
+              class="w-full object-cover"
+            />
+          </div>
+          <h4 class="text-xl font-bold mb-2">GDG On Campus ENSET-M</h4>
+          <p class="text-gray-400 mb-4">
+            Google Developer Group fostering a community of tech enthusiasts
+            focused on Google technologies and platforms.
+          </p>
+          <div class="flex space-x-3">
+            <span
+              class="px-3 py-1 bg-[#00e5a0]/10 text-[#00e5a0] text-xs rounded-full"
+              >Google Tech</span
+            >
+            <span
+              class="px-3 py-1 bg-[#00e5a0]/10 text-[#00e5a0] text-xs rounded-full"
+              >Community</span
+            >
+          </div>
+        </div>
+
+        <div
+          class="2xl:w-md w-xs flex-col bg-[#131a29]/20 backdrop-blur-sm border border-[#33ccff]/20 duration-300 group hover:border-[#33ccff]/40 lg:min-w-4/12 lg:mr-2 mb-2 md:min-w-12/12 min-h-64 overflow-hidden p-6 relative rounded-xl timeline-card transition-colors"
+        >
+          <div
+            class="absolute top-0 left-0 w-20 h-20 bg-[#33ccff]/10 rounded-full blur-xl"
+          ></div>
+          <div
+            class="2xl:px-24 h-64 rounded-full flex items-center justify-center mx-auto mb-4 transition-colors duration-300"
+          >
+            <img
+              src="/assets/logo/n7sec.png"
+              alt="N7SEC Logo"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <h4 class="text-xl font-bold mb-2">N7SEC</h4>
+          <p class="text-gray-400 mb-4">
+            Cybersecurity club dedicated to promoting security awareness,
+            ethical hacking, and defense strategies.
+          </p>
+          <div class="flex space-x-3">
+            <span
+              class="px-3 py-1 bg-[#00e5a0]/10 text-[#00e5a0] text-xs rounded-full"
+              >Cybersecurity</span
+            >
+            <span
+              class="px-3 py-1 bg-[#00e5a0]/10 text-[#00e5a0] text-xs rounded-full"
+              >Ethical Hacking</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mb-20">
+      <div class="text-center mb-10">
+        <h3 class="text-2xl font-bold inline-block relative">
+          Highlights from Previous Editions
+          <div
+            class="absolute -bottom-2 left-1/4 right-1/4 h-0.5 bg-[#00e5a0]"
+          ></div>
+        </h3>
+      </div>
+
+      <h2 class="text-xl font-semibold text-gray-300 mb-4 mt-8 text-center">
+        2025
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div
+          class="group relative overflow-hidden rounded-lg border border-[#1e2040] hover:border-[#00e5a0]/50 transition-colors duration-300"
+        >
+          <div
+            class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-300"
+          ></div>
+          <img
+            src="/assets/pic/hack2025.jpeg"
+            alt="Hackathon participants collaborating"
+            class="w-full h-64 object-cover"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4"
+          >
+            <h4 class="text-white font-bold">AI Hackathon 2025</h4>
+            <p class="text-gray-300 text-sm">
+              Teams collaborating on innovative solutions
+            </p>
+          </div>
+        </div>
+        <div
+          class="group relative overflow-hidden rounded-lg border border-[#1e2040] hover:border-[#00e5a0]/50 transition-colors duration-300"
+        >
+          <div
+            class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-300"
+          ></div>
+          <img
+            src="/assets/pic/ctf2025.jpeg"
+            alt="CTF competition in progress"
+            class="w-full h-64 object-cover"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4"
+          >
+            <h4 class="text-white font-bold">Cybersecurity CTF 2025</h4>
+            <p class="text-gray-300 text-sm">
+              Participants tackling security challenges
+            </p>
+          </div>
+        </div>
+        <div
+          class="group relative overflow-hidden rounded-lg border border-[#1e2040] hover:border-[#00e5a0]/50 transition-colors duration-300"
+        >
+          <div
+            class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-300"
+          ></div>
+          <img
+            src="/assets/pic/award2025.jpeg"
+            alt="Award ceremony"
+            class="w-full h-64 object-cover"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4"
+          >
+            <h4 class="text-white font-bold">Award Ceremony</h4>
+            <p class="text-gray-300 text-sm">Celebrating the winning teams</p>
+          </div>
+        </div>
+        <div
+          class="group relative overflow-hidden rounded-lg border border-[#1e2040] hover:border-[#00e5a0]/50 transition-colors duration-300"
+        >
+          <div
+            class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-300"
+          ></div>
+          <img
+            src="/assets/pic/networking2025.jpeg"
+            alt="Networking session"
+            class="w-full h-64 object-cover"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4"
+          >
+            <h4 class="text-white font-bold">Networking Session</h4>
+            <p class="text-gray-300 text-sm">
+              Connecting students with industry professionals
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="text-xl font-semibold text-gray-300 mb-4 mt-10 text-center">
+        2024
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div
+          class="group relative overflow-hidden rounded-lg border border-[#1e2040] hover:border-[#00e5a0]/50 transition-colors duration-300"
+        >
+          <div
+            class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-300"
+          ></div>
+          <img
+            src="/assets/pic/pitch.jpg"
+            alt="Hackathon participants collaborating"
+            class="w-full h-64 object-cover"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4"
+          >
+            <h4 class="text-white font-bold">AI Hackathon 2024</h4>
+            <p class="text-gray-300 text-sm">
+              Teams collaborating on innovative solutions
+            </p>
+          </div>
+        </div>
+        <div
+          class="group relative overflow-hidden rounded-lg border border-[#1e2040] hover:border-[#00e5a0]/50 transition-colors duration-300"
+        >
+          <div
+            class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-300"
+          ></div>
+          <img
+            src="/assets/pic/ctf.jpg"
+            alt="CTF competition in progress"
+            class="w-full h-64 object-cover"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4"
+          >
+            <h4 class="text-white font-bold">Cybersecurity CTF 2024</h4>
+            <p class="text-gray-300 text-sm">
+              Participants tackling security challenges
+            </p>
+          </div>
+        </div>
+        <div
+          class="group relative overflow-hidden rounded-lg border border-[#1e2040] hover:border-[#00e5a0]/50 transition-colors duration-300"
+        >
+          <div
+            class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-300"
+          ></div>
+          <img
+            src="/assets/pic/prix.jpg"
+            alt="Award ceremony"
+            class="w-full h-64 object-cover"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4"
+          >
+            <h4 class="text-white font-bold">Award Ceremony</h4>
+            <p class="text-gray-300 text-sm">Celebrating the winning teams</p>
+          </div>
+        </div>
+        <div
+          class="group relative overflow-hidden rounded-lg border border-[#1e2040] hover:border-[#00e5a0]/50 transition-colors duration-300"
+        >
+          <div
+            class="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-300"
+          ></div>
+          <img
+            src="/assets/pic/net.jpg"
+            alt="Networking session"
+            class="w-full h-64 object-cover"
+          />
+          <div
+            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4"
+          >
+            <h4 class="text-white font-bold">Networking Session</h4>
+            <p class="text-gray-300 text-sm">
+              Connecting students with industry professionals
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

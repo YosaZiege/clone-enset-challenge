@@ -1,0 +1,151 @@
+<div
+  class="lg:mx-auto lg:max-w-10/12 flex flex-col justify-center items-center relative py-20 px-4 z-100"
+>
+  <div class="text-center mb-16">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">ENSET Challenge</h2>
+    <span
+      class="inline-flex items-center px-3 py-1 rounded-full border border-[#33ccff]/30 bg-[#33ccff]/5 text-sm font-medium mb-4"
+    >
+      <i data-lucide="clock" class="w-3 h-3 mr-1 text-[#33ccff]"></i>
+      {{ data().title }}
+    </span>
+    <p class="text-gray-400 max-w-2xl mx-auto">
+      {{ data().description }}
+    </p>
+  </div>
+  <div class="flex items-center justify-center mb-8 gap-4">
+    <button
+      [class]="
+        `inline-flex items-center cursor-pointer px-8 py-2 rounded-lg border border-[#33ccff]/30 ${hackathon ? 'bg-[#00cc88]/20' : 'bg-[#33ccff]/5'} font-medium`
+      "
+      (click)="switchCompitition(true)"
+    >
+      {{ data().hackathon.title }}
+    </button>
+    <button
+      [class]="
+        `inline-flex items-center cursor-pointer px-8 py-2 rounded-lg border border-[#33ccff]/30 ${!hackathon ? 'bg-[#00cc88]/20' : 'bg-[#33ccff]/5'} font-medium`
+      "
+      (click)="switchCompitition(false)"
+    >
+      {{ data().ctf.title }}
+    </button>
+  </div>
+  @if (hackathon) {
+    <div class="flex lg:flex-row flex-col items-center justify-center w-8xl">
+      @for (item of data().hackathon.phases; track $index) {
+        <div
+          [class]="
+            `timeline-card 2xl:w-lg xl:w-sm lg:w-86 min-h-[45vh] lg:min-w-4/12 md:min-w-12/12 ${dateValidation(item.steps[0].start, item.steps[item.steps.length - 1].end) ? 'lg:mx-6 mb-5 bg-[#00cc88]/10 scale-105 ' : 'lg:mr-2 mb-2 '} backdrop-blur-sm border border-[#33ccff]/20 p-6 rounded-xl relative overflow-hidden group hover:border-[#33ccff]/40 transition-colors duration-300`
+          "
+        >
+          @if (
+            dateValidation(
+              item.steps[0].start,
+              item.steps[item.steps.length - 1].end
+            )
+          ) {
+            <div
+              class="absolute right-0 top-0 px-4 bg-[#00cc88] capitalize rounded-bl-2xl overflow-hidden"
+            >
+              <p class="relative">
+                <span
+                  class="absolute left-[-10px] top-2 w-[8px] h-[8px] rounded-full bg-amber-50"
+                ></span>
+                <span class="pl-1">current</span>
+              </p>
+            </div>
+          }
+          <div
+            class="absolute top-0 left-0 w-20 h-20 bg-[#33ccff]/10 rounded-full blur-xl"
+          ></div>
+          <span
+            class="inline-flex items-center px-2 py-1 rounded-full border border-[#33ccff]/30 bg-[#33ccff]/5 text-xs font-medium mb-3"
+            ><i
+              data-lucide="calendar"
+              class="ri-calendar-event-line flex items-center justify-center w-3 h-3 mr-2 text-[#33ccff]"
+            ></i>
+            {{ item.duration }}</span
+          >
+          <h3 class="text-xl font-bold mb-2">{{ item.title }}</h3>
+          @for (step of item.steps; track $index) {
+            <div class="space-y-2 mb-4">
+              <div class="flex items-center">
+                @if (step.start) {
+                  <i
+                    data-lucide="clock"
+                    class="ri-time-line flex items-center justify-center w-4 h-4 mr-2 text-gray-400"
+                  ></i>
+                }
+                <span class="text-gray-400 text-sm"
+                  >{{ step.start | date: "MMM d - h:mm a" }}
+                  {{ step.end ? "|" : "" }}
+                  {{ step.end | date: "MMM d - h:mm a" }}</span
+                >
+              </div>
+              <p class="text-gray-300 text-sm">{{ step.detail }}</p>
+            </div>
+          }
+        </div>
+      }
+    </div>
+  } @else {
+    <div class="flex lg:flex-row flex-col items-center justify-center">
+      @for (item of data().ctf.phases; track $index) {
+        <div
+          [class]="
+            `timeline-card 2xl:w-lg xl:w-sm lg:w-86 min-h-[45vh] lg:min-w-4/12 md:min-w-12/12 ${dateValidation(item.steps[0].start, item.steps[item.steps.length - 1].end) ? 'lg:mx-6 mb-5 bg-[#00cc88]/10 scale-105 ' : 'lg:mr-2 mb-2 '} backdrop-blur-sm border border-[#33ccff]/20 p-6 rounded-xl relative overflow-hidden group hover:border-[#33ccff]/40 transition-colors duration-300`
+          "
+        >
+          @if (
+            dateValidation(
+              item.steps[0].start,
+              item.steps[item.steps.length - 1].end
+            )
+          ) {
+            <div
+              class="absolute right-0 top-0 px-4 bg-[#00cc88] capitalize rounded-bl-2xl overflow-hidden"
+            >
+              <p class="relative">
+                <span
+                  class="absolute left-[-10px] top-2 w-[8px] h-[8px] rounded-full bg-amber-50"
+                ></span>
+                <span class="pl-1">current</span>
+              </p>
+            </div>
+          }
+          <div
+            class="absolute top-0 left-0 w-20 h-20 bg-[#33ccff]/10 rounded-full blur-xl"
+          ></div>
+          <span
+            class="inline-flex items-center px-2 py-1 rounded-full border border-[#33ccff]/30 bg-[#33ccff]/5 text-xs font-medium mb-3"
+            ><i
+              data-lucide="calendar"
+              class="ri-calendar-event-line flex items-center justify-center w-3 h-3 mr-2 text-[#33ccff]"
+            ></i>
+            {{ item.duration }}</span
+          >
+          <h3 class="text-xl font-bold mb-2">{{ item.title }}</h3>
+          @for (step of item.steps; track $index) {
+            <div class="space-y-2 mb-4">
+              <div class="flex items-center">
+                @if (step.start) {
+                  <i
+                    data-lucide="clock"
+                    class="ri-time-line flex items-center justify-center w-4 h-4 mr-2 text-gray-400"
+                  ></i>
+                }
+                <span class="text-gray-400 text-sm"
+                  >{{ step.start | date: "MMM d - h:mm a" }}
+                  {{ step.end ? "|" : "" }}
+                  {{ step.end | date: "MMM d - h:mm a" }}</span
+                >
+              </div>
+              <p class="text-gray-300 text-sm">{{ step.detail }}</p>
+            </div>
+          }
+        </div>
+      }
+    </div>
+  }
+</div>

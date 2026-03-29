@@ -1,0 +1,233 @@
+<section id="team" class="py-24 z-100 text-white relative overflow-hidden">
+  <div class="container mx-auto px-4 max-w-6xl relative z-10">
+    <div class="mb-20 relative">
+      <div class="text-center pt-16 relative">
+
+        <h2 class="inline-block text-5xl md:text-6xl font-bold tracking-tight relative">
+          <span class="relative ml-4">
+            <span class="text-3xl md:text-4xl font-bold mb-6">{{data().title}}</span>
+            <span class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#00e5a0]/50 to-[#00c288]/30"></span>
+          </span>
+        </h2>
+
+        <p class="text-gray-400 mt-6 max-w-xl mx-auto text-lg font-light tracking-wide">
+          {{data().description}}
+        </p>
+      </div>
+    </div>
+
+    <div class="mb-20">
+      <div class="grid grid-cols-12 gap-6">
+        @for (item of data().lead; track $index) {
+        <div class="col-span-12 md:col-span-4 group">
+          <div
+            class="relative overflow-hidden rounded-2xl border border-[#131a29] transition-all duration-500 hover:border-[#00e5a0]/30 bg-gradient-to-br from-[#131a29] to-[#131a29]/80">
+            <div
+              class="absolute top-0 right-0 w-40 h-40 bg-[#00e5a0]/5 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+            </div>
+            <div class="relative z-10 flex flex-col">
+              <div class="relative h-80 overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#131a29] z-10"></div>
+                <img [src]="item.photo" alt="{{item.name}}"
+                  class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
+                <div
+                  class="absolute inset-0 bg-gradient-to-br from-[#00e5a0]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 mix-blend-overlay">
+                </div>
+              </div>
+
+              <div class="p-8 h-52 flex-grow flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center mb-4">
+                    <div class="h-px flex-grow bg-gradient-to-r from-[#00e5a0]/30 to-transparent"></div>
+                    <span class="px-3 py-1 text-xs font-medium text-[#00e5a0] bg-[#00e5a0]/10 rounded-full mx-3">Lead
+                      Organizer</span>
+                    <div class="h-px flex-grow bg-gradient-to-l from-[#00e5a0]/30 to-transparent"></div>
+                  </div>
+
+                  <h3 class="text-2xl font-bold mb-2">{{item.name}}</h3>
+                  <p class="text-[#00e5a0] text-sm mb-4">{{item.role}}</p>
+                </div>
+
+                <div>
+
+                  <div class="flex h-full space-x-3">
+                    @for (media of item.media; track $index) {
+                    <a [href]="media.link" target="_blank"
+                      class="w-8 h-8 rounded-full bg-[#131a29] flex items-center justify-center text-[#00e5a0] hover:bg-[#00e5a0]/20 transition-colors duration-300">
+                      <i [class]="`ri-${media.icon}-fill`"></i>
+                    </a>
+                    }
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        }
+
+
+        <div class="col-span-12 grid grid-cols-1 md:grid-cols-4 gap-6">
+          @for (item of data().member; track $index) {
+          <div class="group h-full">
+            <div
+              class="relative h-full overflow-hidden rounded-2xl border border-[#131a29] transition-all duration-500 hover:border-[#00e5a0]/30 bg-gradient-to-br from-[#131a29] to-[#131a29]/80">
+              <div
+                class="absolute top-0 right-0 w-40 h-40 bg-[#00e5a0]/5 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
+              </div>
+              <div class="relative z-10 flex flex-col h-full">
+                <div class="relative h-80 overflow-hidden">
+                  <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#131a29] z-10">
+                  </div>
+                  <img [src]="item.photo" [alt]="item.name"
+                    class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-br from-[#00e5a0]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 mix-blend-overlay">
+                  </div>
+                </div>
+
+                <div class="p-8 h-52 flex-grow flex flex-col justify-between">
+                  <div>
+                    <div class="flex items-center mb-4">
+                      <div class="h-px flex-grow bg-gradient-to-r from-[#00e5a0]/30 to-transparent"></div>
+                      <span
+                        class="px-3 py-1 text-xs font-medium text-[#00e5a0] bg-[#00e5a0]/10 rounded-full mx-3">{{item.club}}</span>
+                      <div class="h-px flex-grow bg-gradient-to-l from-[#00e5a0]/30 to-transparent"></div>
+                    </div>
+
+                    <h3 class="text-2xl font-bold mb-2">{{item.name}}</h3>
+                  </div>
+
+                  <div>
+                    <div class="flex h-full space-x-3">
+                      @for (media of item.media; track $index) {
+                      <a [href]="media.link" target="_blank"
+                        class="w-8 h-8 rounded-full bg-[#131a29] flex items-center justify-center text-[#00e5a0] hover:bg-[#00e5a0]/20 transition-colors duration-300">
+                        <i [class]="`ri-${media.icon}-fill`"></i>
+                      </a>
+                      }
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          }
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-20">
+      <div class="relative bg-[#131a29]/50 backdrop-blur-md p-10 rounded-2xl border border-[#131a29] overflow-hidden">
+        <div class="absolute inset-0 z-0">
+          <div
+            class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#00e5a0]/5 via-transparent to-transparent">
+          </div>
+          <div class="absolute bottom-0 right-0 w-64 h-64 bg-[#00e5a0]/5 rounded-full blur-3xl"></div>
+
+          <!-- Subtle grid pattern -->
+          <div class="absolute inset-0 grid grid-cols-12 grid-rows-6 opacity-10">
+            <div
+              class="col-span-full row-span-full border-[0.5px] border-[#00e5a0]/10 rounded-full transform scale-[0.9]">
+            </div>
+            <div
+              class="col-span-full row-span-full border-[0.5px] border-[#00e5a0]/10 rounded-full transform scale-[1.1]">
+            </div>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-10">
+          <!-- Stat 1 -->
+          <div class="flex flex-col items-center text-center group">
+            <div class="relative mb-6">
+              <!-- Circular progress indicator -->
+              <div class="w-42 h-42 rounded-full border-4 border-[#131a29] flex items-center justify-center relative">
+                <svg class="absolute inset-0 w-full h-full" viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="46" fill="none" stroke="#1e2040" stroke-width="8" />
+                  <circle cx="50" cy="50" r="46" fill="none" stroke="#00e5a0" stroke-width="8" stroke-dasharray="289"
+                    stroke-dashoffset="72"
+                    class="transform -rotate-90 origin-center transition-all duration-1000 group-hover:stroke-dashoffset-0" />
+                </svg>
+                <div class="text-4xl font-bold text-[#00e5a0]">25+</div>
+              </div>
+
+              <div class="absolute top-0 right-0 w-2 h-2 rounded-full bg-[#00e5a0]/30 animate-pulse"></div>
+              <div class="absolute bottom-0 left-0 w-2 h-2 rounded-full bg-[#00e5a0]/30 animate-pulse"
+                style="animation-delay: 1s"></div>
+            </div>
+
+            <h3 class="text-xl font-bold mb-2">Dedicated Organizers</h3>
+            <p class="text-gray-400">Student leaders bringing their expertise to create an exceptional event</p>
+          </div>
+
+          <!-- Stat 2 -->
+          <div class="flex flex-col items-center text-center group">
+            <div class="relative mb-6">
+              <div class="w-42 h-42 rounded-full border-4 border-[#131a29] flex items-center justify-center relative">
+                <svg class="absolute inset-0 w-full h-full" viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="46" fill="none" stroke="#1e2040" stroke-width="8" />
+                  <circle cx="50" cy="50" r="46" fill="none" stroke="#00e5a0" stroke-width="8" stroke-dasharray="289"
+                    stroke-dashoffset="29"
+                    class="transform -rotate-90 origin-center transition-all duration-1000 group-hover:stroke-dashoffset-0" />
+                </svg>
+                <div class="text-4xl font-bold text-[#00e5a0]">1000+</div>
+              </div>
+
+              <!-- Decorative dots -->
+              <div class="absolute top-0 right-0 w-2 h-2 rounded-full bg-[#00e5a0]/30 animate-pulse"></div>
+              <div class="absolute bottom-0 left-0 w-2 h-2 rounded-full bg-[#00e5a0]/30 animate-pulse"
+                style="animation-delay: 1s"></div>
+            </div>
+
+            <h3 class="text-xl font-bold mb-2">Hours of Planning</h3>
+            <p class="text-gray-400">Meticulous preparation to ensure a seamless and impactful experience</p>
+          </div>
+
+          <!-- Stat 3 -->
+          <div class="flex flex-col items-center text-center group">
+            <div class="relative mb-6">
+              <div class="w-42 h-42 rounded-full border-4 border-[#1e2040] flex items-center justify-center relative">
+                <svg class="absolute inset-0 w-full h-full" viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="46" fill="none" stroke="#1e2040" stroke-width="8" />
+                  <circle cx="50" cy="50" r="46" fill="none" stroke="#00e5a0" stroke-width="8" stroke-dasharray="289"
+                    stroke-dashoffset="192"
+                    class="transform -rotate-90 origin-center transition-all duration-1000 group-hover:stroke-dashoffset-0" />
+                </svg>
+                <div class="text-4xl font-bold text-[#00e5a0]">3</div>
+              </div>
+
+              <div class="absolute top-0 right-0 w-2 h-2 rounded-full bg-[#00e5a0]/30 animate-pulse"></div>
+              <div class="absolute bottom-0 left-0 w-2 h-2 rounded-full bg-[#00e5a0]/30 animate-pulse"
+                style="animation-delay: 1s"></div>
+            </div>
+
+            <h3 class="text-xl font-bold mb-2">Collaborating Clubs</h3>
+            <p class="text-gray-400">Synergistic partnership between N7Geeks, GDG ENSET-M, and N7SEC</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <div class="inline-block relative group perspective-800">
+        <div
+          class="absolute -inset-1 bg-gradient-to-r rounded-full blur-md opacity-75 transition duration-1000 group-hover:duration-200 animate-pulse-slow">
+        </div>
+
+        <a routerLink="/organizers"
+          class="relative flex items-center bg-[#131a29] hover:bg-[#131a29] text-[#00e5a0] font-bold py-4 px-10 rounded-full transition-all duration-300 border border-[#00e5a0]/50 transform group-hover:translate-y-[-2px]">
+          <span class="mr-3">See All Organizers</span>
+          <svg xmlns="http://www.w3.org/2000/svg"
+            class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

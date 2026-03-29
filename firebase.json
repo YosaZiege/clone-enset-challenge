@@ -1,0 +1,20 @@
+{
+  "hosting": {
+    "public": "dist/enset-challenge/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "appAssociation": "AUTO",
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "not_found_page": "/index.html"
+  }
+}

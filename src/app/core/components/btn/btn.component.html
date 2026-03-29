@@ -1,0 +1,13 @@
+<a
+  [href]="href()"
+  [target]="target()"
+  (click)="btnClick.emit()"
+  [class]="
+    `${customStyle()} group-hover:scale-105 transition-transform text-${size()} rounded-lg duration-300 px-4 py-2 flex items-center justify-center`
+  "
+>
+  <span>{{ content() }}</span>
+  @if (icon().length > 0) {
+    <i [class]="`ri-${icon()} ml-2`"></i>
+  }
+</a>

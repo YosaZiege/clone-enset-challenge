@@ -1,0 +1,101 @@
+<div
+  id="cursor"
+  class="custom-cursor max-w-10/12 relative z-200 hidden md:block"
+></div>
+<div id="cursor-dot" class="custom-cursor-dot hidden md:block"></div>
+
+<div class="fixed inset-0 z-0">
+  <div class="absolute top-0 left-0 w-full h-full">
+    <div
+      class="absolute top-[10%] right-[5%] w-64 h-64 rounded-full bg-[#ff3366]/10 blur-3xl glow-effect"
+    ></div>
+    <div
+      class="absolute top-[40%] left-[10%] w-96 h-96 rounded-full bg-[#33ccff]/10 blur-3xl glow-effect"
+    ></div>
+    <div
+      class="absolute bottom-[15%] right-[15%] w-80 h-80 rounded-full bg-[#00cc88]/10 blur-3xl glow-effect"
+    ></div>
+  </div>
+  <div class="absolute inset-0 bg-[#0a1525]/80 backdrop-blur-sm"></div>
+</div>
+
+<div class="fixed inset-0 z-0 opacity-5">
+  <div class="h-full w-full bg-grid-pattern"></div>
+</div>
+
+<header
+  id="header"
+  class="fixed px-4 top-0 left-0 right-0 z-200 bg-[#0a1525]/80 backdrop-blur-md border-b border-white/5"
+>
+  <div
+    class="mx-0 lg:mx-auto lg:max-w-10/12 lg:px-4 py-1 flex justify-between items-center"
+  >
+    <a href="/" class="flex items-center group z-10">
+      <img [src]="data().logo" [alt]="data().alt" class="h-16 w-auto" />
+    </a>
+
+    <nav class="hidden md:flex space-x-8">
+      @for (item of data().links; track $index) {
+        @if (item.status == "true") {
+          <a
+            [href]="item.href"
+            class="text-gray-300 hover:text-white transition-colors relative nav-link text-md md:text-base lg:text-lg"
+          >
+            {{ item.label }}
+            <span class="nav-link-indicator"></span>
+          </a>
+        }
+      }
+    </nav>
+
+    <div class="flex items-center mx-4">
+      @if (data().btn.status == "true") {
+        <a
+          [href]="data().btn.href"
+          target="_blank"
+          class="relative overflow-hidden text-center group bg-[#ff3366] text-white px-6 py-2 rounded-lg font-medium hidden md:block text-xs md:text-base lg:text-lg"
+        >
+          <span
+            class="relative z-10 group-hover:text-white transition-colors"
+            >{{ data().btn.label }}</span
+          >
+          <span
+            class="absolute inset-0 bg-gradient-to-r from-[#ff3366] to-[#ff5247] group-hover:scale-105 transition-transform duration-300"
+          ></span>
+        </a>
+      }
+
+      <button
+        id="menu-button"
+        class="text-white md:hidden focus:outline-none z-150 bg-amber-50/10 rounded-xl px-2 py-1"
+        (click)="menu = !menu"
+      >
+        <i
+          data-lucide="menu"
+          [class]="`text-2xl ri-${menu ? 'menu-2' : 'close'}-line`"
+        ></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div
+  id="mobile-menu"
+  [class]="
+    `fixed inset-0 bg-[#0a1525]/95 backdrop-blur-lg z-150 flex flex-col justify-center ease-in-out items-center ${menu ? 'opacity-0 hidden' : 'opacity-100 fixed'}`
+  "
+>
+  <nav class="flex flex-col space-y-6 items-center">
+    @for (item of data().links; track $index) {
+      @if (item.status == "true") {
+        <a
+          [href]="item.href"
+          (click)="menu = true"
+          class="text-2xl font-bold text-white mobile-menu-item"
+        >
+          {{ item.label }}
+        </a>
+      }
+    }
+  </nav>
+</div>

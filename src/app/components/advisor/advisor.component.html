@@ -1,0 +1,59 @@
+<section id="team" class="py-24 z-100 text-white relative overflow-hidden">
+  <div class="container mx-auto px-4 max-w-6xl relative z-10">
+    <div class="mb-20 relative">
+      <div class="text-center pt-16 relative">
+
+        <h2 class="inline-block text-5xl md:text-6xl font-bold tracking-tight relative">
+          <span class="relative ml-4">
+            <span class="text-3xl md:text-4xl font-bold mb-6">{{data().title}}</span>
+            <span class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-[#00e5a0]/50 to-[#00c288]/30"></span>
+          </span>
+        </h2>
+
+        <p class="text-gray-400 mt-6 max-w-xl mx-auto text-lg font-light tracking-wide">
+          {{data().description}}
+        </p>
+      </div>
+    </div>
+
+    <div class="mb-10">
+      <div class="grid grid-cols-12 gap-6">
+        @for (item of data().member; track $index) {
+          <div class="col-span-12 md:col-span-4 group">
+            <div class="relative overflow-hidden rounded-2xl border border-[#131a29] transition-all duration-500 hover:border-[#00e5a0]/30 bg-gradient-to-br from-[#131a29] to-[#131a29]/80">
+              <div class="absolute top-0 right-0 w-40 h-40 bg-[#00e5a0]/5 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+              <div class="relative z-10 flex flex-col">
+                <div class="relative h-80 overflow-hidden">
+                  <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#131a29] z-10"></div>
+                  <img
+                    [src]="item.photo"
+                    alt="{{item.name}}"
+                    class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div class="absolute inset-0 bg-gradient-to-br from-[#00e5a0]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 mix-blend-overlay"></div>
+                </div>
+
+                <div class="p-8 flex-grow flex flex-col justify-between">
+                  <div>
+                    <div class="flex items-center mb-4">
+                      <div class="h-px flex-grow bg-gradient-to-r from-[#00e5a0]/30 to-transparent"></div>
+                      <span class="px-3 py-1 text-xs font-medium text-[#00e5a0] bg-[#00e5a0]/10 rounded-full mx-3">Supervisors</span>
+                      <div class="h-px flex-grow bg-gradient-to-l from-[#00e5a0]/30 to-transparent"></div>
+                    </div>
+
+                    <h3 class="text-2xl font-bold mb-2">{{item.name}}</h3>
+                    <p class="text-[#00e5a0] text-sm mb-4">{{item.role}}</p>
+                  </div>
+
+                  <div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+
+  </div>
+</section>
