@@ -617,19 +617,19 @@
         "name": "Pr. Mohamed Youssﬁ",
         "role": "Research Professor, ENSET, UH2C, Software Engineering Consultant.",
         "institution": "ENSET Mohammedia",
-        "photo": "/assets/photo/ouargui.jpg"
+        "photo": "/assets/advisor/pr_youssefi.jpeg"
       },
       {
         "name": "Pr. Soufiane Hamida",
         "role": "Professor Researcher at ENSET Mohammedia, UH2 of Casablanca",
         "institution": "ENSET Mohammedia",
-        "photo": "/assets/photo/hardizi.jpg"
+        "photo": "/assets/advisor/pr_hamida.jpeg"
       },
       {
         "name": "Pr. Abdellah OUAGUID",
         "role": "Ph.D, Study and Development Officer in Software Engineering at CNRST.",
         "institution": "ENSET Mohammedia",
-        "photo": "/assets/photo/azmi.jpg"
+        "photo": "/assets/advisor/pr_ouaguid.jpeg"
       }
     ]
   },
