@@ -587,7 +587,7 @@
       {
         "name": "Mohamed Elanâami",
         "role": "Lead of N7GEEKS",
-        "photo": "/assets/photo/mohammedan.jpeg",
+        "photo": "/assets/photo/mohammedan.png",
         "media": [
           {
             "icon": "linkedin",
@@ -617,19 +617,19 @@
         "name": "Pr. Mohamed Youssﬁ",
         "role": "Research Professor, ENSET, UH2C, Software Engineering Consultant.",
         "institution": "ENSET Mohammedia",
-        "photo": "/assets/advisor/pr_youssefi.jpeg"
+        "photo": "/assets/photo/ouargui.jpg"
       },
       {
         "name": "Pr. Soufiane Hamida",
         "role": "Professor Researcher at ENSET Mohammedia, UH2 of Casablanca",
         "institution": "ENSET Mohammedia",
-        "photo": "/assets/advisor/pr_hamida.jpeg"
+        "photo": "/assets/photo/hardizi.jpg"
       },
       {
         "name": "Pr. Abdellah OUAGUID",
         "role": "Ph.D, Study and Development Officer in Software Engineering at CNRST.",
         "institution": "ENSET Mohammedia",
-        "photo": "/assets/advisor/pr_ouaguid.jpeg"
+        "photo": "/assets/photo/azmi.jpg"
       }
     ]
   },
@@ -791,7 +791,7 @@
           {
             "name": "Mahdi Ibtissam",
             "role": "Member",
-            "photo": "/assets/photo/mahdi-ibtissam.jpeg",
+            "photo": "/assets/photo/ibtissam-mahdi.png",
             "media": []
           },
           {
@@ -836,7 +836,7 @@
           {
             "name": "Wajid Wissal",
             "role": "Member",
-            "photo": "/assets/photo/wissal-wajid.jpeg",
+            "photo": "/assets/photo/wissal-wajid.png",
             "media": []
           },
           {
@@ -875,7 +875,7 @@
           {
             "name": "Essadqui Soumia",
             "role": "Member",
-            "photo": "/assets/photo/soumia-essadqui.jpeg",
+            "photo": "/assets/photo/Soumia-Essadqui.png",
             "media": [
               {
                 "icon": "linkedin",
@@ -886,7 +886,7 @@
           {
             "name": "Ez-Zahery Ahmed Amine",
             "role": "Member",
-            "photo": "/assets/photo/ahmed-amine-ezzahery.jpeg",
+            "photo": "/assets/photo/Ahmed-Amine-EZ-ZAHERY.png",
             "media": [
               {
                 "icon": "linkedin",
@@ -914,7 +914,7 @@
           {
             "name": "Fatima Zahra Es-sadiki",
             "role": "Member",
-            "photo": "/assets/photo/fatimazahra-essadiki.jpeg",
+            "photo": "/assets/photo/fatimazahra-es-sadiki.png",
             "media": [
               {
                 "icon": "linkedin",
@@ -925,7 +925,7 @@
           {
             "name": "Fatima El Abbadi",
             "role": "Member",
-            "photo": "/assets/photo/fatima-elabbadi.jpeg",
+            "photo": "/assets/photo/FATIMA-ELABBADI.png",
             "media": [
               {
                 "icon": "linkedin",
@@ -936,7 +936,7 @@
           {
             "name": "Aya Kouhail",
             "role": "Member",
-            "photo": "/assets/photo/aya-kouhail.jpeg",
+            "photo": "/assets/photo/Aya-Kouhail.png",
             "media": [
               {
                 "icon": "linkedin",
