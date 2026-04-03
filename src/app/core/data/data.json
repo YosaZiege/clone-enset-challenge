@@ -264,8 +264,8 @@
       ],
       "actions": [
         {
-          "text": "Register for the CTF",
-          "url": "https://forms.gle/1goqUdTfvNZ9sWKr5",
+          "text": "Enter the CTF",
+          "url": "https://ctf-enset-challenge.ctfd.io/",
           "color": "#ff3366",
           "icon": "arrow-right"
         }
@@ -833,6 +833,17 @@
         "name": "GDG On Campus ENSET-M",
         "logo": "/assets/logo/gdg.svg",
         "members": [
+          {
+            "name": "RAHIOUI Youssef",
+            "role": "Member",
+            "photo": "/assets/photo/rahiouiyoussef.jpg",
+            "media": [
+              {
+                "icon": "linkedin",
+                "link": "https://www.linkedin.com/in/rahioui-youssef-18b5182a0/"
+              }
+            ]
+          },
           {
             "name": "Wajid Wissal",
             "role": "Member",
